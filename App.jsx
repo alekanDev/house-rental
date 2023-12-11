@@ -1,26 +1,21 @@
-import { LinearGradient } from 'expo-linear-gradient';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './src/views/Home';
+import Init from './src/views/Init';
+import ListHouses from './src/views/ListHouses';
+
 
 export default function App() {
+  const Stack = createNativeStackNavigator()
   return (
-    <LinearGradient style={{ flex: 1 }} colors={ ['#2c2c2c', '#131624'] }>
-      <SafeAreaView style={{ flex: 1 }}>
-        <StatusBar style="auto" />
-        <Home />
-      </SafeAreaView>
-    </LinearGradient>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Init' screenOptions={{ headerShown: false }} >
+        <Stack.Screen name='Init' component={ Init } />
+        <Stack.Screen name='Home' component={ Home } />
+        <Stack.Screen name='ListHouses' component={ ListHouses } />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

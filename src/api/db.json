@@ -1,5 +1,156 @@
 {
   "propieties": [
-    {"id": 1, "name": "house Elegant", "location": "Medellin-Antioquia"}
+    {
+      "id": 1,
+      "name": "house Elegant",
+      "location": "Medellin-Antioquia"
+    },
+    {
+      "id": 2,
+      "name": "house 2 Elegant",
+      "location": "Medellin-Antioquia"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "country": "colombia",
+      "state": "antioquia",
+      "city": "medellín",
+      "district": [
+        {
+          "id": 1,
+          "name": "san javier"
+        },
+        {
+          "id": 2,
+          "name": "fátima"
+        },
+        {
+          "id": 3,
+          "name": "rosales"
+        },
+        {
+          "id": 4,
+          "name": "belén"
+        },
+        {
+          "id": 5,
+          "name": "Granada"
+        },
+        {
+          "id": 6,
+          "name": "san bernardo"
+        },
+        {
+          "id": 7,
+          "name": "las playas"
+        },
+        {
+          "id": 8,
+          "name": "diego echavarria"
+        },
+        {
+          "id": 9,
+          "name": "la mota"
+        },
+        {
+          "id": 10,
+          "name": "la hondonada"
+        },
+        {
+          "id": 11,
+          "name": "el rincon"
+        },
+        {
+          "id": 12,
+          "name": "la loma de los bernal"
+        },
+        {
+          "id": 13,
+          "name": "la gloria"
+        },
+        {
+          "id": 14,
+          "name": "altavista"
+        },
+        {
+          "id": 15,
+          "name": "la palma"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "country": "colombia",
+      "state": "antioquia",
+      "city": "itagüí",
+      "district": [
+        {
+          "id": 12,
+          "name": "la loma de los bernal"
+        },
+        {
+          "id": 13,
+          "name": "la gloria"
+        },
+        {
+          "id": 14,
+          "name": "altavista"
+        },
+        {
+          "id": 15,
+          "name": "la palma"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "country": "colombia",
+      "state": "antioquia",
+      "city": "envigado",
+      "district": [
+        {
+          "id": 12,
+          "name": "la loma de los bernal"
+        },
+        {
+          "id": 13,
+          "name": "la gloria"
+        },
+        {
+          "id": 14,
+          "name": "altavista"
+        },
+        {
+          "id": 15,
+          "name": "la palma"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "country": "colombia",
+      "state": "antioquia",
+      "city": "bello",
+      "district": [
+        {
+          "id": 12,
+          "name": "la loma de los bernal"
+        },
+        {
+          "id": 13,
+          "name": "la gloria"
+        },
+        {
+          "id": 14,
+          "name": "altavista"
+        },
+        {
+          "id": 15,
+          "name": "la palma"
+        }
+      ]
+    }
   ]
 }
