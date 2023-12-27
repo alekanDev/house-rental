@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Modal, Pressable, ImageBackground, KeyboardAvoidingView } from 'react-native'
+// import { StyleSheet, Text, View, Modal, Pressable, ImageBackground, KeyboardAvoidingView } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { Ionicons } from '@expo/vector-icons'
@@ -6,20 +6,24 @@ import { Ionicons } from '@expo/vector-icons'
 import FindLocation from '../modals/FindLocation'
 
 const FormBuyRent = () => {
-  const [viewFormBuyRent, setViewFormBuyRent] = useState(true)
-  const navigation = useNavigation()
 
-  const [houseType, setHouseType] = useState('rentHouse')
-  const [location, setLocation] = useState('Ubicación')
-  const [viewModalFind, setViewModalFind] = useState(false)
 
-  useEffect(() => {
-    // setViewFormBuyRent(true)
-  }, [])
+
+  // const [viewFormBuyRent, setViewFormBuyRent] = useState(true)
+  // const navigation = useNavigation()
+
+  // const [houseType, setHouseType] = useState('rentHouse')
+  // const [location, setLocation] = useState('Ubicación')
+  // const [viewModalFind, setViewModalFind] = useState(false)
+
+  // useEffect(() => {
+  //   console.log(viewFormBuyRent)
+  // }, [])
+
 
   return (
     <Modal visible={ viewFormBuyRent } transparent={ true }>
-      <KeyboardAvoidingView style={{ flex: 1 }}>
+      {/* <KeyboardAvoidingView style={{ flex: 1 }}>
       <View style={{ flex: 1, justifyContent: 'flex-end'}}>
       <ImageBackground style={{ width: '100%', height: 120, backgroundColor: 'rgba(255,255,255,0.6)', padding: 10, marginBottom: 10, justifyContent: 'center' }}>
         <Text style={{ alignItems: 'center', fontSize: 25, fontWeight: 'bold', marginBottom: 5 }}>Bienvenido Juan!</Text>
@@ -52,7 +56,7 @@ const FormBuyRent = () => {
           </View>
           <Pressable style={{ width: '95%', backgroundColor: '#2c2c2c', borderRadius: 25, height: 50, marginTop: 20, alignItems: 'center', justifyContent: 'center' }} onPress={() => { 
             console.log({houseType, location })
-            setViewFormBuyRent(false)
+            // setViewFormBuyRent(false)
             navigation.navigate('ListHouses')
             }} >
             <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold', letterSpacing: 1 }} >Continuar</Text>
@@ -66,7 +70,7 @@ const FormBuyRent = () => {
         />
 
       </View>
-      </KeyboardAvoidingView>
+      </KeyboardAvoidingView> */}
     </Modal>
   )
 }
@@ -74,16 +78,16 @@ const FormBuyRent = () => {
 export default FormBuyRent
 
 const styles = StyleSheet.create({
-  optionHouse: {
-    borderWidth: 2, borderColor: '#2c2c2c', width: '35%', height: 100, borderRadius: 20, justifyContent: 'center', alignItems: 'center', marginTop: 20
-  },
-  optionHouseSel: {
-    borderWidth: 2, borderColor: '#2c2c2c', width: '35%', height: 100, borderRadius: 20, justifyContent: 'center', alignItems: 'center', marginTop: 20, backgroundColor: '#2c2c2c'
-  },
-  textOptionHouse: {
-    fontWeight: 'bold', fontSize: 16, marginTop: 5, color: 'black'
-  },
-  textOptionHouseSel: {
-    fontWeight: 'bold', fontSize: 16, marginTop: 5, color: 'white'
-  }
+  // optionHouse: {
+  //   borderWidth: 2, borderColor: '#2c2c2c', width: '35%', height: 100, borderRadius: 20, justifyContent: 'center', alignItems: 'center', marginTop: 20
+  // },
+  // optionHouseSel: {
+  //   borderWidth: 2, borderColor: '#2c2c2c', width: '35%', height: 100, borderRadius: 20, justifyContent: 'center', alignItems: 'center', marginTop: 20, backgroundColor: '#2c2c2c'
+  // },
+  // textOptionHouse: {
+  //   fontWeight: 'bold', fontSize: 16, marginTop: 5, color: 'black'
+  // },
+  // textOptionHouseSel: {
+  //   fontWeight: 'bold', fontSize: 16, marginTop: 5, color: 'white'
+  // }
 })

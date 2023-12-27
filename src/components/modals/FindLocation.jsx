@@ -89,6 +89,8 @@ const FindLocation = (data) => {
       })
     }
     listLocations()
+    // setViewModalFind(true)
+
   }, [])
   
   const findDistrict = (findText) => {
